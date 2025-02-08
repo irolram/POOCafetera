@@ -19,10 +19,6 @@ fun main() {
         listaTazas.add(Taza(posiblesCapacidadesTazas.random(), Color.entries.random()))
     }
 
-
-
-
-
     println("**********************************************")
     //TODO: Mostrar por pantalla el contenido de las 3 cafeteras y las tazas.
 
@@ -84,4 +80,11 @@ fun main() {
     //TODO: Mostrar por pantalla el contenido de las 3 cafeteras y las tazas.
 
 
+    println(cafetera1)
+    println(cafetera2)
+    println(cafetera3)
+
+    listaTazas.forEach({
+        println(it)
+    })
 }

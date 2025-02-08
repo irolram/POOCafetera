@@ -12,7 +12,7 @@ class Cafetera(var ubicacion: String) {
         if(cantidad > capacidad){
             this.cantidad = capacidad
         }else{
-            this.cantidad = cantidad
+            llenar()
         }
     }
 
@@ -27,10 +27,7 @@ class Cafetera(var ubicacion: String) {
 
         var cafeterallena = true
 
-
                 if (this.cantidad != 0){
-
-
 
                     if (this.cantidad >= taza.capacidad - taza.cantidad){
                         this.cantidad -= (taza.capacidad - taza.cantidad)
@@ -41,12 +38,7 @@ class Cafetera(var ubicacion: String) {
                         cafeterallena = false
                     }
 
-
-
                 }
-
-
-
 
         return cafeterallena
     }
